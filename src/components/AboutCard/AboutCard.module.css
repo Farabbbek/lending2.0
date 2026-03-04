@@ -1,0 +1,104 @@
+.content {
+	--rx: 0deg;
+	--ry: 0deg;
+	--irx: 0deg;
+	--iry: 0deg;
+	--mx: 0px;
+	--my: 0px;
+	--tz: 0px;
+	height: auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 16px;
+	background: #020202;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+	transform-style: preserve-3d;
+	transform: perspective(820px) rotateX(var(--rx)) rotateY(var(--ry)) translateZ(var(--tz));
+	transition: transform 0.14s ease, box-shadow 0.2s ease;
+}
+
+.content:hover {
+	box-shadow: 0 0 34px rgba(255, 255, 255, 0.12);
+}
+
+.header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding-bottom: 12px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	transform: translate3d(calc(var(--mx) * -0.25), calc(var(--my) * -0.25), 12px) rotateX(var(--irx)) rotateY(var(--iry));
+	transition: transform 0.2s ease;
+}
+
+.title {
+	font-size: 27px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	transform: translate3d(calc(var(--mx) * -0.35), calc(var(--my) * -0.35), 22px) rotateX(var(--irx)) rotateY(var(--iry)) scale(1);
+	transform-origin: left center;
+	transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.description p:not(:last-child) {
+	padding-bottom: 0;
+}
+
+.text {
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.2px;
+	overflow-wrap: anywhere;
+	transform: translate3d(calc(var(--mx) * -0.2), calc(var(--my) * -0.2), 14px) rotateX(var(--irx)) rotateY(var(--iry)) scale(1);
+	transform-origin: left center;
+	transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.content:hover .header {
+	transform: translateZ(22px);
+}
+
+.content:hover .title {
+	transform: translate3d(calc(var(--mx) * -0.6), calc(var(--my) * -0.6), 46px) rotateX(var(--irx)) rotateY(var(--iry)) scale(1.07);
+	text-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.content:hover .text {
+	transform: translate3d(calc(var(--mx) * -0.4), calc(var(--my) * -0.4), 30px) rotateX(var(--irx)) rotateY(var(--iry)) scale(1.04);
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.content {
+		will-change: transform;
+	}
+}
+
+@media (max-width: 1024px) {
+	.content {
+		height: auto;
+		min-height: auto;
+	}
+
+	.title {
+		font-size: 23px;
+	}
+
+	.text {
+		font-size: 15px;
+	}
+}
+
+.link {
+	text-decoration: underline;
+}

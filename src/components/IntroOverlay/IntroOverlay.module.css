@@ -1,0 +1,51 @@
+.overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: grid;
+	place-items: center;
+	background: #000000;
+	opacity: 1;
+	transition: opacity 420ms ease;
+}
+
+.fadeOut {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+}
+
+.text {
+	font-family: 'Trajan Pro', 'Times New Roman', serif;
+	font-size: clamp(30px, 4.2vw, 72px);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.revealed {
+	color: #f2f2f2;
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.35);
+}
+
+.encrypted {
+	color: #7e7e7e;
+}
+
+.space {
+	display: inline-block;
+	width: 0.6ch;
+}
+
+.sub {
+	font-family: 'Courier New', monospace;
+	font-size: 13px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.6);
+}

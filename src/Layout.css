@@ -1,0 +1,56 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+	overflow-y: visible;
+	background-color: #000000;
+}
+
+.layout,
+header,
+footer,
+.layoutMain {
+	position: relative;
+	z-index: 2;
+}
+
+/* Bottom Moon section: reserved space for the MoonScene component */
+.moon-section {
+	width: 100%;
+	height: 60vh; /* adjust if you want larger/smaller */
+	max-height: 720px;
+	position: relative;
+	z-index: 1;
+	pointer-events: none; /* let page interactions pass through if needed */
+	overflow: hidden;
+}
+
+.moon-section > * {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Logo 3D section (below the moon) */
+.logo-section {
+	width: 100%;
+	height: 36vh;
+	min-height: 220px;
+	max-height: 420px;
+	position: relative;
+	z-index: 3;
+	pointer-events: auto;
+	overflow: hidden;
+	background: transparent;
+}
+
+/* (debug class removed) */
+
+.logo-section > * {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}

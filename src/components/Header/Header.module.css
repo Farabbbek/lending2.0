@@ -1,0 +1,49 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	background: rgba(0, 0, 0, 0.68);
+	border-bottom: 1px solid #ffffff14;
+	transform: translateZ(0);
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 72px;
+}
+
+.logo {
+	height: 100%;
+	width: 100%;
+}
+
+.nav ul {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.homeLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.link {
+	padding: 6px 12px;
+	color: #888888;
+	font-weight: 500;
+	font-size: 13px;
+
+	transition: color linear 0.2s;
+}
+
+.link:hover {
+	color: #d9d9d9;
+}

@@ -1,0 +1,29 @@
+.section {
+	padding: 80px 0 140px;
+	position: relative;
+	z-index: 1;
+}
+
+.wrap {
+	width: min(100%, 1100px);
+	position: relative;
+}
+
+.canvasHost {
+	height: min(58vh, 620px);
+	min-height: 380px;
+	/* Removed border, background, blur for transparent canvas */
+	overflow: visible;
+}
+
+@media (max-width: 768px) {
+	.section {
+		padding: 64px 0 104px;
+	}
+
+	.canvasHost {
+		height: min(50vh, 460px);
+		min-height: 320px;
+		/* Removed border-radius for mobile */
+	}
+}

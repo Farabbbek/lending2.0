@@ -1,0 +1,112 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 520px;
+  background: #020202;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  padding: 34px 44px 30px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 50;
+}
+
+.title {
+  margin: 0 0 24px 0;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 18px;
+}
+
+.input, .textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 2px 8px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  background: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  pointer-events: auto;
+  outline: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.input:focus,
+.textarea:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 18px -16px rgba(255, 255, 255, 0.75);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 74px;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  min-width: 170px;
+  background: #050505;
+  color: #f4f4f4;
+  padding: 11px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.button:hover:not(:disabled) {
+  background: #f0f0f0;
+  color: #050505;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.32);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.success { margin-top: 14px; color: #b9f3c1; font-size: 13px; text-align: center; }
+.error { margin-top: 14px; color: #ffb3b3; font-size: 13px; text-align: center; }
+
+@media (max-width: 768px) {
+  .form {
+    max-width: 100%;
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+}

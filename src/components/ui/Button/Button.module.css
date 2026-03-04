@@ -1,0 +1,103 @@
+.button {
+	font: inherit;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+	border: 1px solid transparent;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.label {
+	position: relative;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sm {
+	padding: 4px 10px;
+	font-size: 12px;
+}
+
+.md {
+	padding: 6px 12px;
+	font-size: 13px;
+}
+
+.lg {
+	padding: 10px 16px;
+	font-size: 15px;
+}
+
+.primary {
+	background-color: #d9d9d9;
+	color: #000;
+}
+
+.primary:hover {
+	background-color: #cecece;
+}
+
+.secondary {
+	background-color: transparent;
+	color: #d9d9d9;
+}
+
+.outline {
+	background-color: transparent;
+	color: #2563eb;
+	border-color: #2563eb;
+}
+
+.outline:hover {
+	background-color: rgba(37, 99, 235, 0.1);
+}
+
+.danger {
+	background-color: #ef4444;
+	color: white;
+}
+
+.danger:hover {
+	background-color: #dc2626;
+}
+
+.hoverBorder {
+	position: relative;
+	color: #ffffff;
+	background: #050505;
+	border: 1px solid rgba(255, 255, 255, 0.28);
+	overflow: hidden;
+	isolation: isolate;
+	border-radius: 999px;
+}
+
+.hoverBorder::before {
+	content: '';
+	position: absolute;
+	width: 34px;
+	height: 2px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+	border-radius: 999px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.95);
+	offset-path: inset(1px round 999px);
+	offset-distance: 0%;
+	offset-rotate: 0deg;
+	animation: rail-run 4.2s linear infinite;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.hoverBorder:hover::before {
+	animation-duration: 3.4s;
+}
+
+@keyframes rail-run {
+	to {
+		offset-distance: 100%;
+	}
+}
