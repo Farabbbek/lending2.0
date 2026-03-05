@@ -37,8 +37,10 @@ const server = createServer(async (req, res) => {
       }
 
       if (!TG_TOKEN || !TG_CHAT_ID) {
-        res.writeHead(500, { 'Content-Type': 'application/json' })
-        res.end(JSON.stringify({ success: false, error: 'server_misconfigured' }))
+        const line = `[${new Date().toISOString()}] DEV CONTACT | name=${name} | contact=${contact} | message=${description || ''}\n`
+        fs.appendFileSync(path.resolve(process.cwd(), 'dev-output.txt'), line, 'utf8')
+        res.writeHead(200, { 'Content-Type': 'application/json' })
+        res.end(JSON.stringify({ success: true, mode: 'local-log' }))
         return
       }
 

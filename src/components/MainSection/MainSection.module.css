@@ -37,25 +37,27 @@
 	text-transform: uppercase;
 	line-height: 1;
 	margin: 0;
+	color: var(--text-color);
 }
 
 .text {
 	font-size: 21px;
 	font-weight: 500;
+	color: var(--text-color);
 }
 
 .lightLine {
 	width: min(560px, 88vw);
 	height: 2px;
 	border-radius: 999px;
-	background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.9) 50%, transparent 100%);
-	box-shadow: 0 0 12px rgba(255, 255, 255, 0.45);
+	background: linear-gradient(to right, transparent 0%, var(--line-color) 50%, transparent 100%);
+	box-shadow: 0 0 12px var(--line-shadow);
 }
 
 .subtitle {
 	font-size: 20px;
 	font-weight: 400;
-	opacity: 0.5;
+	color: var(--muted-text-color);
 
 	display: flex;
 	justify-content: center;
@@ -69,7 +71,7 @@
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.55));
+	filter: drop-shadow(0 0 14px var(--line-shadow));
 }
 
 .chart {

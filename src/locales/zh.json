@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "about": "关于",
+    "support": "支持",
+    "terms": "条款",
+    "language": "语言"
+  },
+  "hero": {
+    "titleAccent": "自动化。",
+    "subtitle": "无需再为手工流程烦恼。Aetheris 是一个可视化界面，为你的 AI 提供增强记忆、即用型能力和统一 GUI。",
+    "getStarted": "开始使用",
+    "staticMode": "静态模式"
+  },
+  "main": {
+    "tagline": "面向现代企业的智能数字化工具",
+    "pillars": ["智能", "美学", "技术"],
+    "cta": "与 Aetheris 开始项目"
+  },
+  "about": {
+    "cards": [
+      {
+        "title": "业务自动化",
+        "texts": [
+          "我们自动化企业关键流程，从线索处理到内部运营。",
+          "线索与请求的自动处理",
+          "CRM 与工作流系统实施",
+          "面向企业的 AI 助手",
+          "减少员工手工工作",
+          "优化流程与团队负载"
+        ]
+      },
+      {
+        "title": "客户沟通",
+        "texts": [
+          "我们构建可 24/7 自动运行的客户沟通系统。",
+          "WhatsApp、Telegram 与网页聊天",
+          "智能聊天机器人与 AI 客服",
+          "自动化销售漏斗",
+          "通知与跟进消息",
+          "客户支持系统"
+        ]
+      },
+      {
+        "title": "Web 平台与落地页",
+        "texts": [
+          "开发作为统一业务系统一部分的现代 Web 解决方案。",
+          "高转化落地页",
+          "企业官网",
+          "Web 应用",
+          "个人账户与管理后台",
+          "与服务和 CRM 的集成"
+        ]
+      },
+      {
+        "title": "集成与 AI 解决方案",
+        "texts": [
+          "我们将服务、数据与人工智能整合为统一业务基础设施。",
+          "API 与系统集成",
+          "AI 驱动流程自动化",
+          "分析看板与报表",
+          "平台与服务同步",
+          "定制技术方案"
+        ]
+      }
+    ]
+  },
+  "modals": {
+    "about": {
+      "title": "关于 Aetheris",
+      "description": "Aetheris 是一个专注于业务流程自动化和智能工作流开发的团队。",
+      "p1": "我们帮助企业减少手工工作、优化运营，并实施可提升效率与可扩展性的现代自动化工具。",
+      "p2": "我们的工作包括设计自动化系统、集成 AI 辅助工具，以及构建符合特定业务需求的定制解决方案。",
+      "p3": "我们的目标是简化复杂流程，帮助企业更高效地运营。"
+    },
+    "support": {
+      "title": "支持",
+      "description": "如果你对我们的工作有疑问，或希望讨论潜在的自动化项目，你可以直接联系我们。",
+      "emailLabel": "邮箱",
+      "response": "我们会尽快回复你的咨询。",
+      "request": "请附上你的需求或项目的简要说明。"
+    },
+    "terms": {
+      "title": "服务条款",
+      "acceptanceTitle": "条款接受",
+      "acceptanceText": "访问并使用本网站即表示你同意遵守这些条款与条件。",
+      "useTitle": "网站使用",
+      "useText": "本网站提供的信息仅用于参考目的。",
+      "ipTitle": "知识产权",
+      "ipText": "除非另有说明，本网站的所有内容（包括文本、设计和视觉元素）均归 Aetheris 所有。",
+      "liabilityTitle": "责任限制",
+      "liabilityText": "对于因使用本网站或依赖其内容而产生的任何损失，Aetheris 不承担责任。",
+      "changesTitle": "条款变更",
+      "changesText": "Aetheris 保留随时修改这些条款且无需事先通知的权利。",
+      "contactTitle": "联系",
+      "contactText": "如对这些条款有任何疑问，请联系："
+    }
+  },
+  "contactForm": {
+    "title": "联系我们",
+    "nameLabel": "姓名",
+    "namePlaceholder": "你的姓名",
+    "contactLabel": "联系方式（邮箱或电话）",
+    "contactPlaceholder": "邮箱或电话",
+    "messageLabel": "消息",
+    "messagePlaceholder": "简要描述",
+    "submit": "发送",
+    "sending": "发送中...",
+    "success": "消息已发送 — 感谢！",
+    "error": "发送失败，请稍后重试。",
+    "fallback": "当前服务器不可用。",
+    "fallbackAction": "打开邮件应用",
+    "fallbackGmail": "在 Gmail 中打开",
+    "fallbackCopy": "复制邮箱",
+    "fallbackCopied": "已复制"
+  }
+}

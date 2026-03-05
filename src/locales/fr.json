@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "about": "À propos",
+    "support": "Support",
+    "terms": "Conditions",
+    "language": "Langue"
+  },
+  "hero": {
+    "titleAccent": "Automatisé.",
+    "subtitle": "Ne luttez plus avec des processus manuels. Aetheris est l’interface visuelle qui donne à votre IA une mémoire avancée, des compétences prêtes à l’emploi et une interface unifiée.",
+    "getStarted": "Commencer",
+    "staticMode": "Mode statique"
+  },
+  "main": {
+    "tagline": "Outils digitaux intelligents pour les entreprises modernes",
+    "pillars": ["Intelligence", "Esthétique", "Technologie"],
+    "cta": "Démarrer un projet avec Aetheris"
+  },
+  "about": {
+    "cards": [
+      {
+        "title": "Automatisation des entreprises",
+        "texts": [
+          "Nous automatisons les processus clés de l’entreprise, du traitement des demandes aux opérations internes.",
+          "Traitement automatique des leads et des demandes",
+          "Mise en place de systèmes CRM et workflow",
+          "Assistants IA pour l’entreprise",
+          "Réduction du travail manuel des équipes",
+          "Optimisation des processus et de la charge opérationnelle"
+        ]
+      },
+      {
+        "title": "Communication client",
+        "texts": [
+          "Nous créons des systèmes de communication client qui fonctionnent automatiquement 24h/24 et 7j/7.",
+          "WhatsApp, Telegram et chats web",
+          "Chatbots intelligents et opérateurs IA",
+          "Funnels de vente automatisés",
+          "Notifications et messages de relance",
+          "Systèmes de support client"
+        ]
+      },
+      {
+        "title": "Plateformes web et landing pages",
+        "texts": [
+          "Développement de solutions web modernes au sein d’un système business unifié.",
+          "Landing pages à forte conversion",
+          "Sites d'entreprise",
+          "Applications web",
+          "Espaces personnels et panneaux d’administration",
+          "Intégrations avec services et CRM"
+        ]
+      },
+      {
+        "title": "Intégrations et solutions IA",
+        "texts": [
+          "Nous unifions services, données et intelligence artificielle dans une infrastructure business unique.",
+          "Intégrations API et systèmes",
+          "Automatisation des processus par IA",
+          "Tableaux de bord analytiques et reporting",
+          "Synchronisation des plateformes et services",
+          "Solutions techniques sur mesure"
+        ]
+      }
+    ]
+  },
+  "modals": {
+    "about": {
+      "title": "À propos d’Aetheris",
+      "description": "Aetheris est une équipe spécialisée dans l’automatisation des processus métier et le développement de workflows intelligents.",
+      "p1": "Nous aidons les entreprises à réduire le travail manuel, à rationaliser les opérations et à mettre en œuvre des outils modernes d’automatisation qui améliorent l’efficacité et la scalabilité.",
+      "p2": "Notre travail comprend la conception de systèmes automatisés, l’intégration d’outils assistés par l’IA et la création de solutions sur mesure adaptées à des besoins métier spécifiques.",
+      "p3": "Notre objectif est de simplifier les workflows complexes et d’aider les entreprises à fonctionner plus efficacement."
+    },
+    "support": {
+      "title": "Support",
+      "description": "Si vous avez des questions sur notre travail ou souhaitez discuter d’un projet d’automatisation, vous pouvez nous contacter directement.",
+      "emailLabel": "Email",
+      "response": "Nous visons à répondre aux demandes dès que possible.",
+      "request": "Veuillez inclure une brève description de votre demande ou de votre projet."
+    },
+    "terms": {
+      "title": "Conditions d’utilisation",
+      "acceptanceTitle": "Acceptation des conditions",
+      "acceptanceText": "En accédant à ce site et en l’utilisant, vous acceptez de respecter ces conditions générales.",
+      "useTitle": "Utilisation du site",
+      "useText": "Les informations fournies sur ce site sont destinées à des fins purement informatives.",
+      "ipTitle": "Propriété intellectuelle",
+      "ipText": "Tout le contenu de ce site, y compris les textes, le design et les éléments visuels, appartient à Aetheris sauf mention contraire.",
+      "liabilityTitle": "Limitation de responsabilité",
+      "liabilityText": "Aetheris n’est pas responsable des dommages résultant de l’utilisation de ce site ou de la confiance accordée à son contenu.",
+      "changesTitle": "Modification des conditions",
+      "changesText": "Aetheris se réserve le droit de modifier ces conditions à tout moment sans préavis.",
+      "contactTitle": "Contact",
+      "contactText": "Si vous avez des questions concernant ces conditions, veuillez contacter :"
+    }
+  },
+  "contactForm": {
+    "title": "Contactez-nous",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "contactLabel": "Contact (email ou téléphone)",
+    "contactPlaceholder": "email ou téléphone",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Brève description",
+    "submit": "Envoyer",
+    "sending": "Envoi...",
+    "success": "Message envoyé — merci !",
+    "error": "Échec de l’envoi. Veuillez réessayer plus tard.",
+    "fallback": "Le serveur est indisponible pour le moment.",
+    "fallbackAction": "Ouvrir l'application mail",
+    "fallbackGmail": "Ouvrir dans Gmail",
+    "fallbackCopy": "Copier l'email",
+    "fallbackCopied": "Copié"
+  }
+}

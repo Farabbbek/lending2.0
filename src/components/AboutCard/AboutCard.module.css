@@ -7,26 +7,27 @@
 	--my: 0px;
 	--tz: 0px;
 	height: auto;
+
 	min-height: 0;
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
 	padding: 20px;
-	border: 1px solid rgba(255, 255, 255, 0.16);
+	border: 1px solid var(--card-border-color);
 	border-radius: 16px;
-	background: #020202;
-	box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+	background: var(--card-bg);
+	box-shadow: var(--card-shadow);
 	transform-style: preserve-3d;
 	transform: perspective(820px) rotateX(var(--rx)) rotateY(var(--ry)) translateZ(var(--tz));
 	transition: transform 0.14s ease, box-shadow 0.2s ease;
 }
 
 .content:hover {
-	box-shadow: 0 0 34px rgba(255, 255, 255, 0.12);
+	box-shadow: var(--card-shadow);
 }
 
 .header {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid var(--surface-border-color);
 	padding-bottom: 12px;
 	display: flex;
 	align-items: center;
@@ -39,6 +40,7 @@
 	font-size: 27px;
 	font-weight: 600;
 	letter-spacing: 0.5px;
+	color: var(--text-color);
 	transform: translate3d(calc(var(--mx) * -0.35), calc(var(--my) * -0.35), 22px) rotateX(var(--irx)) rotateY(var(--iry)) scale(1);
 	transform-origin: left center;
 	transition: transform 0.2s ease, text-shadow 0.2s ease;
@@ -58,6 +60,7 @@
 	font-size: 16px;
 	line-height: 1.6;
 	letter-spacing: 0.2px;
+	color: var(--muted-text-color);
 	overflow-wrap: anywhere;
 	transform: translate3d(calc(var(--mx) * -0.2), calc(var(--my) * -0.2), 14px) rotateX(var(--irx)) rotateY(var(--iry)) scale(1);
 	transform-origin: left center;
@@ -101,4 +104,5 @@
 
 .link {
 	text-decoration: underline;
+	color: var(--text-color);
 }

@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "about": "About",
+    "support": "Support",
+    "terms": "Terms",
+    "language": "Language"
+  },
+  "hero": {
+    "titleAccent": "Automated.",
+    "subtitle": "Stop struggling with manual workflows. Aetheris is the visual interface that gives your AI super memory, plug-and-play skills, and a unified GUI.",
+    "getStarted": "Get Started",
+    "staticMode": "Static mode"
+  },
+  "main": {
+    "tagline": "Intelligent digital tools for modern business",
+    "pillars": ["Intelligence", "Aesthetics", "Technology"],
+    "cta": "Start a project with Aetheris"
+  },
+  "about": {
+    "cards": [
+      {
+        "title": "Business Automation",
+        "texts": [
+          "We automate key company processes — from lead handling to internal operations.",
+          "Automatic processing of leads and requests",
+          "CRM and workflow system implementation",
+          "AI assistants for business",
+          "Reduced manual workload for employees",
+          "Process optimization and team load balancing"
+        ]
+      },
+      {
+        "title": "Client Communications",
+        "texts": [
+          "We build client communication systems that run automatically 24/7.",
+          "WhatsApp, Telegram and web chats",
+          "Smart chatbots and AI operators",
+          "Automated sales funnels",
+          "Notifications and follow-up messages",
+          "Customer support systems"
+        ]
+      },
+      {
+        "title": "Web Platforms and Landing Pages",
+        "texts": [
+          "Development of modern web solutions as part of a unified business system.",
+          "High-converting landing pages",
+          "Corporate websites",
+          "Web applications",
+          "Personal accounts and admin panels",
+          "Integrations with services and CRM"
+        ]
+      },
+      {
+        "title": "Integrations and AI Solutions",
+        "texts": [
+          "We unify services, data, and AI into a single business infrastructure.",
+          "API and system integrations",
+          "AI-based process automation",
+          "Analytics dashboards and reporting",
+          "Platform and service synchronization",
+          "Custom technical solutions"
+        ]
+      }
+    ]
+  },
+  "modals": {
+    "about": {
+      "title": "About Aetheris",
+      "description": "Aetheris is a team focused on business process automation and intelligent workflow development.",
+      "p1": "We help companies reduce manual work, streamline operations, and implement modern automation tools that improve efficiency and scalability.",
+      "p2": "Our work includes designing automated systems, integrating AI-assisted tools, and building custom solutions tailored to specific business needs.",
+      "p3": "Our goal is to simplify complex workflows and help businesses operate more efficiently."
+    },
+    "support": {
+      "title": "Support",
+      "description": "If you have questions about our work or want to discuss a potential automation project, you can contact us directly.",
+      "emailLabel": "Email",
+      "response": "We aim to respond to inquiries as soon as possible.",
+      "request": "Please include a short description of your request or project."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "acceptanceTitle": "Acceptance of Terms",
+      "acceptanceText": "By accessing and using this website, you agree to comply with these terms and conditions.",
+      "useTitle": "Use of Website",
+      "useText": "The information provided on this website is intended for informational purposes only.",
+      "ipTitle": "Intellectual Property",
+      "ipText": "All content on this website, including text, design, and visual elements, belongs to Aetheris unless otherwise stated.",
+      "liabilityTitle": "Limitation of Liability",
+      "liabilityText": "Aetheris is not responsible for any damages resulting from the use of this website or reliance on its content.",
+      "changesTitle": "Changes to Terms",
+      "changesText": "Aetheris reserves the right to modify these terms at any time without prior notice.",
+      "contactTitle": "Contact",
+      "contactText": "If you have any questions regarding these terms, please contact:"
+    }
+  },
+  "contactForm": {
+    "title": "Contact Us",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "contactLabel": "Contact (email or phone)",
+    "contactPlaceholder": "email or phone",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Short description",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Message sent — thank you!",
+    "error": "Failed to send. Please try again later.",
+    "fallback": "Server is unavailable right now.",
+    "fallbackAction": "Open email app",
+    "fallbackGmail": "Open in Gmail",
+    "fallbackCopy": "Copy email",
+    "fallbackCopied": "Copied"
+  }
+}

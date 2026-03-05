@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import styles from './HeroSection.module.css'
 
 const LazyThreeHeroCanvas = lazy(() => import('./ThreeHeroCanvas.tsx'))
@@ -24,6 +25,7 @@ const isUltraLowTierDevice = () => {
 }
 
 const HeroSection = () => {
+	const { t } = useTranslation()
 	const sectionRef = useRef<HTMLElement | null>(null)
 	const idleHandleRef = useRef<number | null>(null)
 	const timeoutHandleRef = useRef<number | null>(null)
@@ -150,7 +152,7 @@ const HeroSection = () => {
 					</div>
 				)}
 				{/* Fail-safe mode if WebGL is unavailable or context is lost. */}
-				{(!canRender3D || threeFailed) && <div className={styles.heroFallbackNote}>Static mode</div>}
+				{(!canRender3D || threeFailed) && <div className={styles.heroFallbackNote}>{t('hero.staticMode')}</div>}
 				<div className={styles.modelTriggerMaskLeft} aria-hidden='true' />
 				<div className={styles.modelTriggerMaskBottom} aria-hidden='true' />
 			</div>
@@ -160,13 +162,10 @@ const HeroSection = () => {
 						<h1 className={styles.title}>
 							Aetheris,
 							<br />
-							<span className={styles.titleAccent}>Automated.</span>
+							<span className={styles.titleAccent}>{t('hero.titleAccent')}</span>
 						</h1>
 
-						<p className={styles.subtitle}>
-							Stop struggling with manual workflows. Aetheris is the visual interface that gives your AI
-							super memory, plug-and-play skills, and a unified GUI.
-						</p>
+						<p className={styles.subtitle}>{t('hero.subtitle')}</p>
 
 						<div className={styles.ctaSection}>
 							<p className={styles.ctaText} aria-hidden='true'>
@@ -176,7 +175,7 @@ const HeroSection = () => {
 
 						<div className={styles.buttons}>
 							<a href='#about' className={`${styles.btn} ${styles.btnPrimary}`}>
-								Get Started
+								{t('hero.getStarted')}
 								<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
 									<path
 										d='M6 1L6 11M6 11L11 6M6 11L1 6'

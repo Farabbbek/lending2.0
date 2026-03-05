@@ -1,0 +1,18 @@
+.themeToggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.themeLabel {
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted-text-color);
+}
+
+@media (max-width: 768px) {
+	.themeLabel {
+		display: none;
+	}
+}

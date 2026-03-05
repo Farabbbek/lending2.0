@@ -14,14 +14,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@react-three/postprocessing": "^3.0.4",
     "clsx": "^2.1.1",
     "gsap": "^3.14.2",
+    "i18next": "^25.8.14",
     "postprocessing": "^6.38.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-i18next": "^16.5.5",
     "three": "^0.179.1",
     "vanta": "^0.5.24"
   },

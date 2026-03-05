@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 import logo from '../../assets/logo64.svg'
-import { links } from '../../routes/links'
+import NavigationDialogs from '../NavigationDialogs/NavigationDialogs'
 
 const Footer = () => {
 	return (
@@ -12,13 +12,10 @@ const Footer = () => {
 					</a>
 
 					<nav className={styles.nav}>
-						<ul>
-							{links.map((link, i) => (
-								<li className={styles.link} key={i}>
-									<a href={link.href}>{link.label}</a>
-								</li>
-							))}
-						</ul>
+						<NavigationDialogs
+							itemClassName={styles.link}
+							triggerClassName={styles.navTrigger}
+						/>
 					</nav>
 				</div>
 

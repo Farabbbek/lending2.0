@@ -7,6 +7,38 @@
 	padding: 0;
 }
 
+:root {
+	--bg-color: #000000;
+	--text-color: #d9d9d9;
+	--muted-text-color: rgba(217, 217, 217, 0.7);
+	--surface-color: rgba(0, 0, 0, 0.72);
+	--surface-border-color: rgba(255, 255, 255, 0.08);
+	--card-bg: #020202;
+	--card-border-color: rgba(255, 255, 255, 0.16);
+	--card-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+	--line-color: rgba(255, 255, 255, 0.9);
+	--line-shadow: rgba(255, 255, 255, 0.45);
+	--button-bg: #050505;
+	--button-text: #f4f4f4;
+	--button-border: rgba(255, 255, 255, 0.75);
+}
+
+.dark {
+	--bg-color: #000000;
+	--text-color: #d9d9d9;
+	--muted-text-color: rgba(217, 217, 217, 0.7);
+	--surface-color: rgba(0, 0, 0, 0.72);
+	--surface-border-color: rgba(255, 255, 255, 0.08);
+	--card-bg: #020202;
+	--card-border-color: rgba(255, 255, 255, 0.16);
+	--card-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+	--line-color: rgba(255, 255, 255, 0.9);
+	--line-shadow: rgba(255, 255, 255, 0.45);
+	--button-bg: #050505;
+	--button-text: #f4f4f4;
+	--button-border: rgba(255, 255, 255, 0.75);
+}
+
 /* 3. Base document setup */
 html,
 body {
@@ -14,11 +46,12 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color: #000000;
-	color: #d9d9d9;
+	background-color: var(--bg-color);
+	color: var(--text-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	scroll-behavior: smooth;
+	transition: background-color 220ms ease, color 220ms ease;
 }
 
 html,
